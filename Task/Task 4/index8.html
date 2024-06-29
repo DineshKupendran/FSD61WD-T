@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Rotate an array by k times
+        //- An anonymous function (an immediately invoked function expression)
+        const arr = [1, 2, 3, 4, 5, 6];
+const K = 2;
+
+const rotatedArr = (function(arr, K) {
+  return arr.slice(K).concat(arr.slice(0, K));
+})(arr, K);
+
+console.log(rotatedArr); // Output: [3, 4, 5, 6, 1, 2]
+
+    </script>
+</body>
+</html>

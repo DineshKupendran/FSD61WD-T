@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Return all the palindromes in an array  Anonymous Function :  
+        
+const arr = ["madam", "racecar", "hello", "level", "world"];
+
+for (let i = 0; i < arr.length; i++) {
+  (function(str) {
+    if (str === str.split("").reverse().join("")) {
+      console.log(str);
+    }
+  })(arr[i]);
+}
+    </script>
+    
+</body>
+</html>
